@@ -23,7 +23,7 @@ function downloadFromArticleLink(articleLink) {
         return yield (0, downloadPdfWithBrowser_1.default)(pdfLink);
     });
 }
-function getPdfDataForArticle({ url, pdf, }) {
+function getPdfDataForArticle({ pdf, url, }) {
     return __awaiter(this, void 0, void 0, function* () {
         let pdfData;
         if (pdf) {
@@ -33,7 +33,7 @@ function getPdfDataForArticle({ url, pdf, }) {
             pdfData = yield downloadFromArticleLink(url);
         }
         if (!pdfData) {
-            throw new Error("failed to get data from the pdf link or the article link");
+            throw new Error('failed to get data from the pdf link or the article link');
         }
         return pdfData;
     });

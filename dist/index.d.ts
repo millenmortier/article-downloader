@@ -1,5 +1,5 @@
 /// <reference types="node" />
-export default function getPdfDataForArticle({ url, pdf, }: {
+export default function getPdfDataForArticle({ pdf, url, }: {
+    pdf?: string;
     url: string;
-    pdf: string;
 }): Promise<Buffer>;
