@@ -1,5 +1,5 @@
-import downloadPdfWithBrowser from "./downloadPdfWithBrowser";
-import { getPdfLink } from "@millenmortier/scihub-tools";
+import downloadPdfWithBrowser from './downloadPdfWithBrowser';
+import { getPdfLink } from '@millenmortier/scihub-tools';
 
 async function downloadFromArticleLink(
   articleLink: string
@@ -12,11 +12,11 @@ async function downloadFromArticleLink(
 }
 
 export default async function getPdfDataForArticle({
-  url,
   pdf,
+  url,
 }: {
+  pdf?: string;
   url: string;
-  pdf: string;
 }) {
   let pdfData;
   if (pdf) {
@@ -26,7 +26,7 @@ export default async function getPdfDataForArticle({
     pdfData = await downloadFromArticleLink(url);
   }
   if (!pdfData) {
-    throw new Error("failed to get data from the pdf link or the article link");
+    throw new Error('failed to get data from the pdf link or the article link');
   }
   return pdfData;
 }
