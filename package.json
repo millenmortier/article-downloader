@@ -1,0 +1,33 @@
+{
+  "name": "@millenmortier/article-downloader",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millenmortier/article-downloader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/millenmortier/article-downloader/issues"
+  },
+  "homepage": "https://github.com/millenmortier/article-downloader#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@millenmortier/scihub-tools": "^0.1.0",
+    "playwright": "^1.23.2"
+  }
+}
